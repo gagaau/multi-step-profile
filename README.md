@@ -41,7 +41,7 @@ Formulário de multi-etapas em React + TypeScript com validação, podendo mudar
 
 >>> Deploy:
 
-- ...
+https://multi-step-profile-seven.vercel.app/
 
 >>>>> Autor:
 
