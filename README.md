@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+PROJETO: Multi-step Profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Formulário de multi-etapas em React + TypeScript com validação, podendo mudar o tema entre claro e escuro, e rascunho salvo no localStorage.
 
-Currently, two official plugins are available:
+>>> Funcionalidades:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Formulário dividido em etapas.
 
-## React Compiler
+- Etapas de dados básicos, conhecimentos, preferências e revisão final.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Botão para avançar e voltar entre as etapas.
 
-## Expanding the ESLint configuration
+- Validação simples dos campos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Barra de progresso.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Resumo final antes do envio.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Mensagem de sucesso ao finalizar.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Tema claro e escuro.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Rascunho salvo no localStorage.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+>>> Tecnologias usadas:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React.
+- TypeScript.
+- CSS.
+- localStorage.
+- Vite.
+
+>>> Como rodar o projeto:
+
+- npm install
+- npm run dev
+
+>>> Status:
+
+- Projeto finalizado para o portfólio.
+
+>>> Deploy:
+
+- ...
+
+>>>>> Autor:
+
+Feito por Gabriel Henrique.
