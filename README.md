@@ -43,6 +43,10 @@ Formulário de multi-etapas em React + TypeScript com validação, podendo mudar
 
 https://multi-step-profile-seven.vercel.app/
 
+>>> Screenshot:
+
+![Tela do Multi-step Profile](./screenshots/multi-step-profile.png)
+
 >>>>> Autor:
 
 Feito por Gabriel Henrique.
