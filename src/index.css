@@ -1,0 +1,351 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Tema claro e escuro */
+body.light {
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+body.dark {
+  background: #111827;
+  color: #f3f4f6;
+}
+
+/* Container principal */
+.app {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* Área do Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.app-label {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.app-header h1 {
+  margin: 0 0 10px;
+  font-size: 2.3rem;
+}
+
+.app-header p {
+  margin-top: 0;
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+/* Botão de tema */
+.theme-toggle {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  background: #1d4ed8;
+}
+
+/* Barra de progresso */
+.progress-area {
+  margin-bottom: 20px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+body.light .progress-track {
+  background: #dbe4f0;
+}
+
+body.dark .progress-track {
+  background: #374151;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  transition: width 0.3s;
+}
+
+/* Card das etapas */
+.step-card,
+.success-card {
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+body.light .step-card,
+body.light .success-card {
+  background: white;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+body.dark .step-card,
+body.dark .success-card {
+  background: #1f2937;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.step-card h2,
+.success-card h2 {
+  margin-top: 0;
+}
+
+.step-description {
+  margin-top: 0;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+/* Mensagem de erro */
+.error-message {
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 18px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+/* Campos do formulário */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px 14px;
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+body.dark .form-group input,
+body.dark .form-group select,
+body.dark .form-group textarea {
+  background: #111827;
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Área dos conhecimentos */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.checkbox-card {
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+body.light .checkbox-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+body.dark .checkbox-card {
+  background: #111827;
+  border: 1px solid #374151;
+}
+
+.checkbox-card input {
+  width: 18px;
+  height: 18px;
+}
+
+/* Área de revisão */
+.review-list {
+  display: grid;
+  gap: 12px;
+}
+
+.review-item {
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+body.light .review-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+body.dark .review-item {
+  background: #111827;
+  border: 1px solid #374151;
+}
+
+.review-item span {
+  color: #64748b;
+}
+
+body.dark .review-item span {
+  color: #cbd5e1;
+}
+
+.review-item strong {
+  text-align: right;
+}
+
+/* Botões de navegação */
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.primary-button,
+.secondary-button,
+.success-card button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: bold;
+}
+
+.primary-button,
+.success-card button {
+  background: #16a34a;
+  color: white;
+}
+
+.primary-button:hover,
+.success-card button:hover {
+  background: #15803d;
+}
+
+.secondary-button {
+  background: #cbd5e1;
+  color: #1f2937;
+}
+
+.secondary-button:hover {
+  background: #94a3b8;
+}
+
+/* Mensagem de sucesso */
+.success-card {
+  text-align: center;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0 auto 18px;
+}
+
+.success-card p {
+  max-width: 560px;
+  margin: 0 auto 22px;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 720px) {
+  .app-header {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-item {
+    flex-direction: column;
+  }
+
+  .review-item strong {
+    text-align: left;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+}
